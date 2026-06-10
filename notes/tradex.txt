@@ -1,0 +1,2 @@
+tradex Backend journey started
+ learning node.js
