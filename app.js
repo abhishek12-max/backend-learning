@@ -1,13 +1,13 @@
-console.log("hello node .js");
-const name = "Abhishek";
-const age = 21;
+// console.log("hello node .js");
+// const name = "Abhishek";
+// const age = 21;
 
-console.log(name);
-console.log(age);
+// console.log(name);
+// console.log(age);
 
-function greet(name){
-   return `Hello ${name}`;
-}
+// function greet(name){
+//    return `Hello ${name}`;
+// }
 
 // console.log(greet("Abhishek"));
 
@@ -48,14 +48,32 @@ function greet(name){
 //  fs.unlinkSync("notes/test.txt");
 // console.log(__dirname);
 
-const fs= require("fs");
-const path= require("path");
-console.log(__dirname);
-const filepath= path.join(__dirname,"notes","note2.txt");
-fs.readFileSync(filepath,"utf-8");
+// const fs= require("fs");
+// const path= require("path");
+// console.log(__dirname);
+// const filepath= path.join(__dirname,"notes","note2.txt");
+// fs.readFileSync(filepath,"utf-8");
 
 // const os = require("os");
 
 // console.log(os.platform());
 // console.log(os.arch());
 // console.log(os.userInfo());
+
+const math= require("./math");
+ console.log(math.add(10,5));
+ console.log(math.sub(10,5));
+ console.log(math.multiply(10,5));
+ console.log("A");
+
+setTimeout(() => {
+  console.log("B");
+}, 1000);
+
+console.log("C");
+
+setTimeout(() => {
+  console.log("D");
+}, 0);
+
+console.log("E");

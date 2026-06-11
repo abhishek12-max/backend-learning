@@ -21,11 +21,11 @@
  const http= require("http");
  const server= http.createServer((req,res)=>{
     if(req.url==="/"){
-        res.end("tradeX home page");
+        res.end("welcome to abhishek portfolio");
     }else if (req.url==="/about"){
-        res.end("tradeX about page");
-    }else if(req.url==="/contact"){
-        res.end("tradeX contact page");
+        res.end("iam mern stack developer");
+    }else if(req.url==="/projects"){
+        res.end("tradeX project comming soon ");
     }else{
         res.end("404 page not found");
     }
